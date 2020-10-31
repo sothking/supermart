@@ -13,9 +13,16 @@
 
 <script>
 import navbar from '@/components/content/navbar/NavBar'
+import {homeBanner} from '@/network/home.js'
 export default {
   components:{
     navbar
+  },
+  created(){
+    homeBanner().then(res =>{
+      console.log(res)
+    })
+ 
   }
 }
 </script>

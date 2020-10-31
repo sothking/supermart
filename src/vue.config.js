@@ -14,7 +14,7 @@
 // const path = require("path");
 // function resolve(dir) {
 //   return path.join(__dirname, dir);
-// }
+
 
 // module.exports = {
 //   chainWebpack: config => {
@@ -27,3 +27,9 @@
 //         // .set("public", resolve("public"));
 //   },
 // }
+
+module.exports={
+    devServer: {
+        proxy:{'/index':  'https://m.hatzjh.com/index.php/Ucenter/'}
+      }
+}
