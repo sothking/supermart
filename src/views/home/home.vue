@@ -6,29 +6,24 @@
     </navbar> 
 </div>
   <div>
-      <h2>首页</h2>
+    <swiperbanner/>
+    
+     <h2>首页</h2>
   </div>
 </div>
 </template>
 
 <script>
 import navbar from '@/components/content/navbar/NavBar'
-import {homeBanner} from '@/network/home.js'
 
-import swiper from 'swiper'
+import swiperbanner from '@/components/content/banner/banner'
+
 export default {
   components:{
-    navbar
+    navbar,swiperbanner
   },
-  created(){
-    homeBanner().then(res =>{
-      console.log(res)
-    })
+
  
-  },
-  mounted(){
-    console.log(swiper)
-  }
 }
 </script>
 
