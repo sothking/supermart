@@ -28,8 +28,8 @@
 //   },
 // }
 
-module.exports={
-    devServer: {
-        proxy:{'/index':  'https://m.hatzjh.com/index.php/Ucenter/'}
-      }
-}
+module.exports = {
+  devServer: {
+    proxy: { "/index.php/Ucenter/index": { target: "https://m.hatzjh.com/" } }
+  }
+};

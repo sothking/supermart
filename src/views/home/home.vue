@@ -14,6 +14,8 @@
 <script>
 import navbar from '@/components/content/navbar/NavBar'
 import {homeBanner} from '@/network/home.js'
+
+import swiper from 'swiper'
 export default {
   components:{
     navbar
@@ -23,6 +25,9 @@ export default {
       console.log(res)
     })
  
+  },
+  mounted(){
+    console.log(swiper)
   }
 }
 </script>
